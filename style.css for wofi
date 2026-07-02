@@ -1,0 +1,73 @@
+* {
+    font-family: "DejaVu Sans Bold", sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#outer-box {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 6px;
+}
+
+#input {
+    background-color: #ffffff;
+    color: #000000;
+    caret-color: #000000;
+    padding: 4px 8px;
+    margin: 0 0 6px 0;
+    border-bottom: 1px solid #cccccc;
+    min-height: 18px;
+}
+
+#input image {
+    color: #aaaaaa;
+}
+
+#input:focus {
+    border-bottom: 1px solid #000000;
+}
+
+#scroll {
+    margin: 0px;
+    padding: 0px;
+}
+
+#inner-box {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+#entry {
+    background-color: #ffffff;
+    padding: 6px 8px;
+    margin: 1px 0;
+    color: #333333;
+}
+
+#entry:selected {
+    background-color: #f0f0f0;
+    color: #000000;
+    border-left: 2px solid #000000;
+}
+
+#entry image {
+    margin-right: 8px;
+}
+
+#text {
+    color: inherit;
+}
+
+#text:selected {
+    color: #000000;
+}
