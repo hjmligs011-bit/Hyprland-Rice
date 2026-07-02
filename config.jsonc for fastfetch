@@ -1,0 +1,75 @@
+{
+    "logo": {
+        "source": "~/.config/fastfetch/logo.jpg",
+        "type": "kitty",
+        "height": 16,
+        "padding": {
+            "top": 0
+        }
+    },
+    "display": {
+        "separator": "- "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "keyWidth": 10
+        },
+        "break",
+        {
+            "type": "os",
+            "key": "󰣇 OS",
+            "keyColor": "34"
+        },
+        {
+            "type": "kernel",
+            "key": "󰒋 Kernel",
+            "keyColor": "34"
+        },
+        {
+            "type": "packages",
+            "format": "Pacman",
+            "key": "󰏗 Packages",
+            "keyColor": "34"
+        },
+        {
+            "type": "shell",
+            "key": "󰆍 Shell",
+            "keyColor": "34"
+        },
+        {
+            "type": "terminal",
+            "key": "󰄛 Terminal",
+            "keyColor": "34"
+        },
+        {
+            "type": "wm",
+            "key": "󰕮 WM",
+            "keyColor": "34"
+        },
+        {
+            "type": "cursor",
+            "key": "󰳽 Cursor",
+            "keyColor": "34"
+        },
+        {
+            "type": "terminalfont",
+            "key": "󰛖 Font",
+            "keyColor": "34"
+        },
+        {
+            "type": "uptime",
+            "key": "󰥔 Uptime",
+            "keyColor": "34"
+        },
+        {
+            "type": "datetime",
+            "format": "{1}-{3}-{11}",
+            "key": "󰃰 Date",
+            "keyColor": "34"
+        },
+        "break",
+        "break"
+    ]
+}
