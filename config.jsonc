@@ -1,0 +1,41 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 18,
+    "spacing": 0,
+
+    "modules-left": ["custom/arch", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "custom/power"],
+
+    "custom/arch": {
+        "format": "\uf303",
+        "tooltip-format": "Abrir launcher",
+        "on-click": "wofi --show drun",
+        "interval": "once"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-click": "activate",
+        "active-only": true
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%A, %d de %B de %Y}"
+    },
+
+    "tray": {
+        "icon-size": 13,
+        "spacing": 9
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip-format": "Desligar / Reiniciar / Sair",
+        "on-click": "wlogout"
+    }
+}
+
+
