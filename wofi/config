@@ -1,0 +1,45 @@
+# ===================================================
+# Wofi Config — Catppuccin Mocha (minimalista)
+# ===================================================
+
+# Janela
+width=550
+height=380
+location=center
+show=drun
+prompt=Buscar...
+layer=overlay
+
+# Ícones
+allow_images=true
+image_size=30
+
+# Busca / matching
+filter_rate=15
+insensitive=true
+matching=contains
+allow_markup=true
+parse_search=true
+sort_order=alphabetical
+
+# Comportamento (mouse + teclado)
+no_actions=true
+single_click=true
+always_parse_args=true
+show_all=false
+print_command=true
+hide_scroll=false
+
+# Layout
+halign=fill
+orientation=vertical
+content_halign=fill
+columns=1
+dynamic_lines=true
+line_wrap=off
+
+# Terminal usado para apps que exigem terminal
+term=alacritty
+
+# Visual
+gtk_dark=true

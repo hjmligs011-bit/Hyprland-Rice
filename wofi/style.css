@@ -1,0 +1,108 @@
+/* ===================================================
+   Wofi Theme — Catppuccin Mocha (minimalista, estável)
+   Fonte: JetBrainsMono Nerd Font
+   =================================================== */
+
+@define-color base      #1e1e2e;
+@define-color mantle     #181825;
+@define-color text       #cdd6f4;
+@define-color surface0   #313244;
+@define-color surface1   #45475a;
+@define-color surface2   #585b70;
+@define-color overlay0   #6c7086;
+@define-color lavender   #b4befe;
+@define-color mauve      #cba6f7;
+
+* {
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+}
+
+/* Sem border-radius e sem box-shadow no window:
+   em layer-shell sem compositing isso causa artefato visual
+   (quadrado atrás do canto arredondado / sombra cortada) */
+window {
+    background-color: @base;
+    border: 2px solid @mauve;
+}
+
+#outer-box {
+    margin: 10px;
+    background-color: transparent;
+}
+
+/* ---------- Campo de busca ---------- */
+#input {
+    margin: 6px 10px 10px 10px;
+    padding: 8px 12px;
+    background-color: @mantle;
+    color: @text;
+    border: 1px solid @surface1;
+    caret-color: @mauve;
+}
+
+#input:focus {
+    border: 1px solid @mauve;
+}
+
+/* ---------- Lista ---------- */
+#inner-box {
+    margin: 0px 8px 8px 8px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+}
+
+#text {
+    color: @text;
+    margin: 0px 6px;
+}
+
+#text:selected {
+    color: @lavender;
+}
+
+#img {
+    margin-right: 4px;
+}
+
+/* Cada item do menu — box-shadow interno (inset) em vez de
+   border-left para não deslocar o texto/ícone ao selecionar */
+#entry {
+    padding: 6px 8px;
+    margin: 2px 4px;
+    background-color: transparent;
+    color: @text;
+}
+
+#entry:selected {
+    background-color: @surface0;
+    box-shadow: inset 3px 0 0 0 @mauve;
+}
+
+#entry:hover {
+    background-color: @surface1;
+}
+
+#entry:selected:hover {
+    background-color: @surface1;
+    box-shadow: inset 3px 0 0 0 @mauve;
+}
+
+/* ---------- Scrollbar discreta ---------- */
+scrollbar {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: @surface2;
+    min-width: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: @overlay0;
+}
