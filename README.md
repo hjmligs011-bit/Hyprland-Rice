@@ -21,10 +21,6 @@ Minimalist Hyprland dotfiles featuring **Catppuccin Mocha Dark**, modular **Lua*
 
 <img width="1920" height="1080" alt="2026-11-19-200712_hyprshot" src="https://github.com/user-attachments/assets/e79e934f-c32d-4039-b6da-2b5810a2b675" />
 
-### Desktop
-
-<!-- ![Desktop](assets/desktop.png) -->
-
 ### Terminal (kitty + fastfetch)
 
 <img width="1906" height="1030" alt="2026-11-19-201736_hyprshot" src="https://github.com/user-attachments/assets/ea6c4496-cebf-4531-b728-ac173646db41" />
@@ -36,10 +32,6 @@ Minimalist Hyprland dotfiles featuring **Catppuccin Mocha Dark**, modular **Lua*
 ### Status bar (waybar)
 
 <img width="1920" height="31" alt="2026-11-19-201619_hyprshot" src="https://github.com/user-attachments/assets/6c2d82f9-0026-4b82-a05c-de128f64ba79" />
-
-### Workspaces and animations
-
-<!-- ![Animations](assets/animations.gif) -->
 
 ---
 
