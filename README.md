@@ -35,7 +35,7 @@ Minimalist Hyprland dotfiles featuring **Catppuccin Mocha Dark**, modular **Lua*
 
 ### Status bar (waybar)
 
-<!-- ![Waybar](assets/waybar.png) -->
+<img width="1920" height="31" alt="2026-11-19-201619_hyprshot" src="https://github.com/user-attachments/assets/6c2d82f9-0026-4b82-a05c-de128f64ba79" />
 
 ### Workspaces and animations
 
