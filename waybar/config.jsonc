@@ -1,0 +1,71 @@
+{
+  // ──────── Barra ────────
+  "layer": "top",
+  "position": "top",
+  "spacing": 3,
+  "height": 1,
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+
+  // ──────── Disposição dos módulos ────────
+  "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/cpucat"],
+  "modules-right": [
+    "tray",
+    "wireplumber",
+    "mpris",
+    "clock",
+    "custom/power"
+  ],
+
+  // ──────── Módulos · esquerda ────────
+  "custom/launcher": {
+    "format": "",
+    "on-click": "wofi -show drun",
+    "tooltip": false
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "sort-by-number": true
+  },
+
+  "custom/cpucat": {
+    "exec": "/home/miguel/.config/waybar/scripts/catloop.sh",
+    "format": "{}",
+    "restart-interval": 1,
+    "tooltip": false
+  },
+
+  // ──────── Módulos · direita ────────
+  // Sem bloco de configuração (usam o padrão do Waybar): custom/power
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  },
+
+  "wireplumber": {
+    "scroll-step": 5,
+    "format": " {icon} {volume}%",
+    "format-muted": "󰝟 muted",
+    "on-click": "pavucontrol",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"],
+      "headphones": "󰋋",
+      "headset": "󰋎"
+    }
+  },
+
+  "mpris": {
+    "format": "  {artist} - {title} ",
+    "format-paused": " 󰐊 {artist} - {title} ",
+    "max-length": 37,
+    "tooltip": true,
+    "player": "spotify"
+  },
+
+  "clock": {
+    "format": "{:%H:%M} "
+  }
+}
