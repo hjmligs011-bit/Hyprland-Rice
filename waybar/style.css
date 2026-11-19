@@ -1,0 +1,156 @@
+/* ==========================================================================
+   WAYBAR — Rosé Pine (iris) · minimalista
+
+   Índice
+     1. Paleta
+     2. Base
+     3. Esquerda   (launcher · workspaces · cpu cat)
+     4. Direita    (base comum · tray · mpris · volume)
+     5. Hover compartilhado
+     6. Tooltip
+   ========================================================================== */
+
+
+/* 1. PALETA ================================================================ */
+
+@define-color base      #141221;
+@define-color surface   #1e1b2e;
+@define-color overlay   #2a2640;
+@define-color muted     #5b4950;
+@define-color iris      #C4A7E7;
+@define-color text      #e0def4;
+@define-color love      #eb6f92;
+
+
+/* 2. BASE ================================================================== */
+
+* {
+    font-family: "Iosevka", monospace;
+    font-weight: 800;
+    font-size: 13px;
+    color: @iris;
+    transition: background 150ms ease, color 150ms ease, opacity 150ms ease;
+}
+
+window#waybar {
+    background: alpha(@base, 0.94);
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 3. ESQUERDA ============================================================== */
+
+/* Launcher */
+#custom-launcher {
+    font-family: "Iosevka Nerd Font", "Iosevka", monospace;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 0;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 1px;
+    margin: 3px 2px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: @muted;
+}
+
+#workspaces button:hover {
+    background: @surface;
+    color: @iris;
+}
+
+#workspaces button.active {
+    color: @iris;
+    border-bottom-color: @iris;
+}
+
+#workspaces button.urgent {
+    background: alpha(@love, 0.18);
+    color: @love;
+}
+
+/* CPU cat */
+#custom-cpucat {
+    font-family: "Waycat", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: @text;
+    padding: 0 8px 0 5px;
+}
+
+
+/* 4. DIREITA =============================================================== */
+
+/* Base comum a todos os módulos */
+#tray,
+#wireplumber,
+#mpris,
+#clock,
+#custom-power {
+    padding: 0 4px;
+    border-radius: 4px;
+    background: transparent;
+}
+
+/* Exceções de espaçamento (declaradas depois da base, mesma especificidade) */
+#tray,
+#wireplumber {
+    padding: 0 6px;
+}
+
+/* Tray */
+#tray > .passive {
+    opacity: 0.6;
+}
+
+#tray > .needs-attention {
+    background: alpha(@love, 0.18);
+    border-radius: 4px;
+}
+
+/* Mídia */
+#mpris {
+    font-weight: 700;
+}
+
+#mpris.paused {
+    opacity: 0.7;
+}
+
+/* Volume */
+#wireplumber.muted {
+    opacity: 0.6;
+}
+
+
+/* 5. HOVER COMPARTILHADO =================================================== */
+
+#custom-launcher:hover,
+#wireplumber:hover,
+#mpris:hover,
+#clock:hover,
+#custom-power:hover {
+    background: @surface;
+}
+
+
+/* 6. TOOLTIP =============================================================== */
+
+tooltip {
+    background: alpha(@base, 0.96);
+    border: 1px solid @overlay;
+    border-radius: 6px;
+}
+
+tooltip label {
+    color: @text;
+    font-size: 11px;
+    padding: 2px 4px;
+}
