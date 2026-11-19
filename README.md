@@ -19,7 +19,8 @@ Minimalist Hyprland dotfiles featuring **Catppuccin Mocha Dark**, modular **Lua*
 
 ## 📸 Showcase
 
-<!-- Add your images in the assets/ folder and uncomment/edit the lines below. -->
+<!-- Add your im<img width="1920" height="1080" alt="2026-11-19-200712_hyprshot" src="https://github.com/user-attachments/assets/49520f69-dccc-4226-a80e-d40a1feaa88e" />
+ages in the assets/ folder and uncomment/edit the lines below. -->
 
 ### Desktop
 
