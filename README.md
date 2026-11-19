@@ -27,7 +27,7 @@ Minimalist Hyprland dotfiles featuring **Catppuccin Mocha Dark**, modular **Lua*
 
 ### Terminal (kitty + fastfetch)
 
-<!-- ![Terminal](assets/terminal.png) -->
+<img width="1906" height="1030" alt="2026-11-19-201736_hyprshot" src="https://github.com/user-attachments/assets/ea6c4496-cebf-4531-b728-ac173646db41" />
 
 ### Launcher (wofi)
 
