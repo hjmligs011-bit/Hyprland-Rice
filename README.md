@@ -31,7 +31,7 @@ Minimalist Hyprland dotfiles featuring **Catppuccin Mocha Dark**, modular **Lua*
 
 ### Launcher (wofi)
 
-<!-- ![Launcher](assets/wofi.png) -->
+<img width="572" height="403" alt="2026-11-19-200721_hyprshot" src="https://github.com/user-attachments/assets/bc516398-9c74-47f7-9936-6c1a8b315f67" />
 
 ### Status bar (waybar)
 
